@@ -10,7 +10,7 @@ const Navbar = () => {
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
-    setHoveredLink(null); // Reset hover state when menu closes
+    setHoveredLink(null);
   };
 
   const navLinks = [
@@ -21,13 +21,12 @@ const Navbar = () => {
     { name: "Careers", href: "/careers", image: "/careers-image.jpg" }
   ];
 
-  // Default image when no link is hovered
   const defaultImage = "/home-image.jpg";
 
   return (
-    <div className="relative">
-      <nav className="flex items-center justify-between w-full bg-transparent py-20 px-40">
-        {/* Logo */}
+    <div className="fixed top-0 left-0 right-0 z-50">
+      {/* Transparent navbar with glass morphism effect */}
+      <nav className="flex items-center justify-between w-full py-8 px-6 md:py-12 md:px-12 lg:py-6 lg:px-40">
         <div>
           <Link href="/" className="flex items-start">
             <Image 
@@ -35,47 +34,46 @@ const Navbar = () => {
               alt="Harom fertilizer's logo"
               width={120}
               height={40}
+              className="w-24 lg:w-32"
             />
           </Link>
         </div>
 
-        {/* Hamburger button */}
         <button
           onClick={toggleMenu}
-          className="cursor-pointer bg-white p-2 rounded-full border-none shadow-sm hover:shadow-md transition-all z-50"
+          className="cursor-pointer bg-white/90 p-2 rounded-full border-none shadow-sm hover:shadow-md transition-all"
           aria-label={isOpen ? "Close menu" : "Open menu"}
         >
           {isOpen ? <FiX className="w-6 h-6 text-black" /> : <FiMenu className="w-6 h-6 text-black" />}
         </button>
       </nav>
 
-      {/* Full-width dropdown menu */}
+      {/* Mobile menu overlay */}
       {isOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 z-40" onClick={toggleMenu}>
+        <div className="fixed inset-0 bg-black/70 z-40" onClick={toggleMenu}>
           <div 
-            className="fixed top-0 left-0 w-full bg-teal-500 shadow-xl z-50 py-12 px-40"
+            className="fixed top-0 left-0 w-full bg-teal-500 shadow-xl z-50 py-8 px-6 md:py-12 md:px-12 lg:py-12 lg:px-40 overflow-y-auto"
             onClick={(e) => e.stopPropagation()}
           >
-            {/* Logo at top of dropdown - now with original color */}
-            <div className="mb-12">
+            <div className="mb-8 md:mb-12">
               <Link href="/" className="flex items-start" onClick={() => setIsOpen(false)}>
                 <Image 
                   src="/logo.jpeg"
                   alt="Harom fertilizer's logo"
                   width={160}
                   height={53}
+                  className="w-32 lg:w-40"
                 />
               </Link>
             </div>
 
-            <div className="flex">
-              {/* Links section - left side */}
-              <div className="w-1/2 pr-8 flex flex-col">
+            <div className="flex flex-col lg:flex-row">
+              <div className="w-full lg:w-1/2 lg:pr-8 flex flex-col">
                 {navLinks.map((link) => (
                   <Link
                     key={link.name}
                     href={link.href}
-                    className="text-white text-3xl font-medium py-4 hover:text-yellow-500 transition-colors"
+                    className="text-white text-xl md:text-2xl lg:text-3xl font-medium py-3 md:py-4 hover:text-yellow-500 transition-colors"
                     onClick={() => setIsOpen(false)}
                     onMouseEnter={() => setHoveredLink(link.name)}
                     onMouseLeave={() => setHoveredLink(null)}
@@ -85,8 +83,7 @@ const Navbar = () => {
                 ))}
               </div>
               
-              {/* Image section - right side - now changes on hover */}
-              <div className="w-1/2 flex items-center justify-center transition-all duration-300">
+              <div className="w-full lg:w-1/2 flex items-center justify-center mt-8 lg:mt-0">
                 <Image
                   src={hoveredLink 
                     ? navLinks.find(link => link.name === hoveredLink)?.image || defaultImage
@@ -94,7 +91,7 @@ const Navbar = () => {
                   alt="Menu visual"
                   width={600}
                   height={400}
-                  className="rounded-lg object-cover shadow-lg transition-opacity duration-300"
+                  className="rounded-lg object-cover shadow-lg transition-opacity duration-300 w-full max-w-md"
                   style={{
                     opacity: hoveredLink ? 1 : 0.8,
                     transform: hoveredLink ? 'scale(1.02)' : 'scale(1)'
