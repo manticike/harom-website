@@ -8,7 +8,7 @@ const CareerSection = () => {
     <section className="w-full">
       {/* Top section: text on colored background */}
       <div className="bg-[#133e27] w-full py-16 px-6 lg:px-40">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 items-center">
           <p className="text-yellow-500 uppercase tracking-wide font-semibold mb-2">Careers</p>
           <h2 className="text-white text-3xl md:text-4xl font-semibold mb-6">
             Join our growing team of experts
@@ -22,7 +22,7 @@ const CareerSection = () => {
           <ReadMoreButton 
             href="/careers"
             children="View Vacancies"
-            className="uppercase bg-white text-black font-semibold px-6 py-3 rounded-full hover:bg-yellow-400 transition"
+            className="uppercase cursor-pointer bg-white text-green-950 font-semibold px-6 py-3 rounded-full hover:bg-yellow-400 transition"
           />
         </div>
       </div>

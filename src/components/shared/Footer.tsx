@@ -36,7 +36,7 @@ const Footer = () => {
       <hr className="border-gray-200" />
 
       {/* Logo + Social */}
-      <div className="max-w-7xl bg-[#133e27] mx-auto px-4 py-8 flex flex-col md:flex-row items-center justify-between text-white text-sm">
+      <div className="w-full bg-[#133e27] mx-auto px-8 py-8 flex flex-col md:flex-row items-center justify-between text-white text-sm">
         {/* Logo */}
         <div className="mb-4 md:mb-0">
           <Link

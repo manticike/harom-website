@@ -42,7 +42,7 @@ const Slide: React.FC<SlideProps> = ({
           </p>
           <ReadMoreButton 
             href={link} 
-            className="text-base px-6 py-2 md:px-8 md:py-3"
+            className="text-base bg-[#133e27] cursor-pointer px-6 py-2 md:px-8 md:py-3"
           />
         </div>
       </div>
