@@ -1,5 +1,7 @@
 // app/page.tsx
 import HeroSlider from "../components/Hero/HeroSlider";
+import CareerSection from "../components/HomePage/CareerSection";
+import VideoSection from "../components/HomePage/VideoSection";
 
 export default function Home() {
   const slides = [
@@ -27,6 +29,8 @@ export default function Home() {
     <main>
       <HeroSlider slides={slides} autoPlay={true} interval={5000} />
       {/* Rest of your page content */}
+      <VideoSection />
+      <CareerSection />
     </main>
   );
 }

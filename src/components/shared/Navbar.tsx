@@ -24,9 +24,9 @@ const Navbar = () => {
   const defaultImage = "/home-image.jpg";
 
   return (
-    <div className="fixed top-0 left-0 right-0 z-50">
-      {/* Transparent navbar with glass morphism effect */}
-      <nav className="flex items-center justify-between w-full py-8 px-6 md:py-12 md:px-12 lg:py-6 lg:px-40">
+    <div className="top-0 left-0 right-0 z-50">
+      
+      <nav className="flex bg-transparent items-center justify-between w-full py-8 px-6 md:py-12 md:px-12 lg:py-6 lg:px-40">
         <div>
           <Link href="/" className="flex items-start">
             <Image 
@@ -50,7 +50,7 @@ const Navbar = () => {
 
       {/* Mobile menu overlay */}
       {isOpen && (
-        <div className="fixed inset-0 bg-black/70 z-40" onClick={toggleMenu}>
+        <div className="fixed inset-0 bg-white/10 backdrop-blur-sm z-40" onClick={toggleMenu}>
           <div 
             className="fixed top-0 left-0 w-full bg-teal-500 shadow-xl z-50 py-8 px-6 md:py-12 md:px-12 lg:py-12 lg:px-40 overflow-y-auto"
             onClick={(e) => e.stopPropagation()}
