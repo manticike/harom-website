@@ -32,7 +32,7 @@ const VideoSection = () => {
             <ReadMoreButton 
             href="/careers"
             children="View Vacancies"
-            className="uppercase text-white bg-[#133e27] ursor-pointer font-semibold px-6 py-3 rounded-full"
+            className="uppercase text-white bg-[#133e27] cursor-pointer font-semibold px-6 py-3 rounded-full"
             />
           </div>
         </div>
