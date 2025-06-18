@@ -52,9 +52,8 @@ const LocationSection = () => {
         </div>
          <ReadMoreButton 
             href="/careers"
-            children="View Vacancies"
             className="mt-4 uppercase cursor-pointer bg-white text-[#012936] font-semibold px-6 py-3 rounded-full hover:bg-yellow-400 transition"
-          />
+          >View Vacancies</ReadMoreButton>
       </section>
     </div>
   );

@@ -31,9 +31,8 @@ const VideoSection = () => {
           <div className="mt-8">
             <ReadMoreButton 
             href="/careers"
-            children="View Vacancies"
             className="uppercase text-white bg-[#133e27] cursor-pointer font-semibold px-6 py-3 rounded-full"
-            />
+            >View Vacancies</ReadMoreButton>
           </div>
         </div>
 

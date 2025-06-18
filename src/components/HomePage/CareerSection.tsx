@@ -21,9 +21,8 @@ const CareerSection = () => {
           </p>
           <ReadMoreButton 
             href="/careers"
-            children="View Vacancies"
             className="uppercase cursor-pointer bg-white text-green-950 font-semibold px-6 py-3 rounded-full hover:bg-yellow-400 transition"
-          />
+          > View Vacancies</ReadMoreButton>
         </div>
       </div>
 

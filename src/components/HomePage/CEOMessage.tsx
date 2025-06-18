@@ -37,9 +37,9 @@ const CEOMessage = () => {
               
               {/* CEO Info Card */}
               <div className="absolute bottom-4 left-4 right-4 bg-white rounded-lg p-4 shadow-lg">
-                <h3 className="font-bold text-gray-900 text-lg">WESAM Y. ALGHAMDI</h3>
+                <h3 className="font-bold text-gray-900 text-lg">EMMANUEL AMANKWAAH</h3>
                 <p className="text-sm text-gray-600 font-medium">CHIEF EXECUTIVE OFFICER</p>
-                <p className="text-sm text-gray-500">NEOM GREEN HYDROGEN COMPANY</p>
+                <p className="text-sm text-gray-500">HAROM FERTILIZER LIMITED</p>
               </div>
             </div>
           </div>
@@ -51,7 +51,9 @@ const CEOMessage = () => {
             
             {/* Quote Text */}
             <blockquote className="text-xl lg:text-2xl text-gray-700 leading-relaxed font-medium">
-              NGHC is leading the global energy transition from Saudi Arabia and in line with Saudi Vision 2030. By harnessing the power of nature, our strong partnerships, and innovative technology, we are striving to build a carbon free world for future generations.
+              NGHC is leading the global energy transition from Saudi Arabia and in 
+              line with Saudi Vision 2030. By harnessing the power of nature, our strong partnerships, and innovative technology, 
+              we are striving to build a carbon free world for future generations.
             </blockquote>
             
             {/* Closing Quote */}
@@ -63,9 +65,8 @@ const CEOMessage = () => {
             <div className="pt-6">
           <ReadMoreButton 
             href="/careers"
-            children="View Vacancies"
             className="uppercase bg-[#133e27] cursor-pointer text-white font-semibold px-6 py-3 rounded-full hover:bg-yellow-600 transition"
-          />
+          >View Vacancies</ReadMoreButton>
             </div>
           </div>
         </div>
