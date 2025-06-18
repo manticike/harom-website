@@ -8,27 +8,27 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 py-12 grid grid-cols-2 md:grid-cols-4 gap-6 text-lg font-semibold text-gray-500">
         <div>
           <ul className="space-y-2">
-            <li><Link href="/about">About</Link></li>
-            <li><Link href="/insights">News & Insights</Link></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/insights">News & Insights</a></li>
           </ul>
         </div>
         <div>
           <ul className="space-y-2">
-            <li><Link href="/leadership">Leadership</Link></li>
-            <li><Link href="/newsroom">Newsroom</Link></li>
+            <li><a href="/leadership">Leadership</a></li>
+            <li><a href="/newsroom">Newsroom</a></li>
           </ul>
         </div>
         <div>
           <ul className="space-y-2">
-            <li><Link href="/partners">Partners</Link></li>
-            <li><Link href="/careers">Careers</Link></li>
+            <li><a href="/partners">Partners</a></li>
+            <li><a href="/careers">Careers</a></li>
           </ul>
         </div>
         <div>
           <ul className="space-y-2">
-            <li><Link href="/hydrogen">Why Green Hydrogen?</Link></li>
-            <li><Link href="/plant">The Plant</Link></li>
-            <li><Link href="/contact">Contact Us</Link></li>
+            <li><a href="/hydrogen">Why Green Hydrogen?</a></li>
+            <li><a href="/plant">The Plant</a></li>
+            <li><a href="/contact">Contact Us</a></li>
           </ul>
         </div>
       </div>
@@ -66,9 +66,9 @@ const Footer = () => {
       {/* Bottom Bar */}
       <div className="bg-[#133e27] text-white text-sm px-4 py-4 flex flex-col md:flex-row justify-between items-center">
         <div className="flex gap-4 mb-2 md:mb-0">
-          <Link href="/privacy">Privacy Policy</Link>
-          <Link href="/terms">Terms of Use</Link>
-          <Link href="/cookies">Cookie Policy</Link>
+          <a href="/privacy">Privacy Policy</a>
+          <a href="/terms">Terms of Use</a>
+          <a href="/cookies">Cookie Policy</a>
         </div>
         <div>© {new Date().getFullYear()} NEOM Green Hydrogen Company</div>
       </div>
