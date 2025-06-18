@@ -47,7 +47,7 @@ const CEOMessage = () => {
           {/* Quote and Content */}
           <div className="space-y-6">
             {/* Quote Icon */}
-            <div className="text-6xl text-red-300 font-serif leading-none">"</div>
+            <div className="text-6xl text-red-300 font-serif leading-none">&ldquo;</div>
             
             {/* Quote Text */}
             <blockquote className="text-xl lg:text-2xl text-gray-700 leading-relaxed font-medium">
@@ -58,7 +58,7 @@ const CEOMessage = () => {
             
             {/* Closing Quote */}
             <div className="text-right">
-              <span className="text-6xl text-red-300 font-serif leading-none">"</span>
+              <span className="text-6xl text-red-300 font-serif leading-none">&rdquo;</span>
             </div>
 
             {/* Learn More Button */}
