@@ -27,7 +27,7 @@ const companies: Company[] = [
     background: '/partners/partner3.jpg',
   },
    {
-    id: 3,
+    id: 4,
     name: 'Company Three',
     logo: '/partners/partner4-logo.png',
     background: '/partners/partner4.jpg',
